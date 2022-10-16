@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 * {
   margin: 0;
@@ -8,6 +9,7 @@
 }
 
 body {
+  display: flex;
   position: relative;
   min-height: 100vh;
   background-color: hsl(0deg, 0%, 98%);
@@ -17,7 +19,7 @@ body {
   width: 85%;
   margin: 0 auto;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .container p {
   color: hsl(229deg, 6%, 66%);
@@ -50,12 +52,13 @@ body {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 }
 .cards .card {
   position: relative;
-  max-width: 400px;
+  max-width: 350px;
   height: 250px;
   padding: 25px;
   background-color: #fff;
@@ -81,6 +84,7 @@ body {
   border-top: 4px solid hsl(0deg, 78%, 62%);
 }
 .cards .card-3 {
+  margin-top: 30px;
   border-top: 4px solid hsl(34deg, 97%, 64%);
 }
 .cards .card-4 {
@@ -90,12 +94,24 @@ body {
 .attribution {
   position: absolute;
   left: 50%;
+  bottom: 0;
   transform: translate(-50%);
   font-size: 11px;
   padding: 10px;
   text-align: center;
 }
-
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+/* Настольные компьютеры и ноутбуки ----------- */
+@media only screen and (min-width: 1224px) {
+  .container {
+    margin-top: 50px;
+  }
+  .cards {
+    margin: 20px;
+    flex-direction: row;
+    height: 600px;
+  }
 }/*# sourceMappingURL=main.css.map */

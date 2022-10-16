@@ -38,6 +38,7 @@ $font-size: 15px;
 }
 
 body {
+  display: flex;
   position: relative;
   min-height: 100vh;
   background-color: $very-light-gray;
@@ -47,7 +48,7 @@ body {
   width: 85%;
   margin: 0 auto;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   
   p {
     color: $grayish-blue;
@@ -68,7 +69,6 @@ body {
     font-size: 1.6rem;
     color: $very-dark-blue;
     font-weight: 600;
-    // margin: 0 auto;
     text-align: center;
   }
 
@@ -84,12 +84,13 @@ body {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 
   .card {
     position: relative;
-    max-width: 400px;
+    max-width: 350px;
     height: 250px;
     padding: 25px;
     background-color: $white;
@@ -120,6 +121,7 @@ body {
   }
 
   .card-3 {
+    margin-top: 30px;
     border-top: 4px solid $orange;
   }
 
@@ -128,17 +130,31 @@ body {
   }
 }
 
-
-
-
 .attribution {
   position: absolute;
   left: 50%;
+  bottom: 0;
   transform: translate(-50%);
   font-size: 11px;
   padding: 10px;
   text-align: center;
+   
+  a {
+    color: hsl(228, 45%, 44%); 
+  }
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+
+/* Настольные компьютеры и ноутбуки ----------- */
+@media only screen  and (min-width: 1224px) {
+  
+  .container {
+    margin-top: 50px;
+  }
+
+  .cards {
+    margin: 20px;
+    flex-direction: row;
+    height: 600px;
+  }
 }
