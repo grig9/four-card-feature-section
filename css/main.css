@@ -4,4 +4,94 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.container p {
+  color: hsl(229deg, 6%, 66%);
+}
+
+.box {
+  width: 100%;
+  padding: 0 0.3rem;
+}
+.box .second-title {
+  font-size: 1.6rem;
+  color: hsl(229deg, 6%, 66%);
+  font-weight: 200;
+  text-align: center;
+}
+.box .title {
+  font-size: 1.6rem;
+  color: hsl(234deg, 12%, 34%);
+  font-weight: 600;
+  text-align: center;
+}
+.box p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.cards .card {
+  position: relative;
+  height: 250px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0px 5px 15px -5px hsl(229deg, 6%, 66%);
+}
+.cards .card .card__title {
+  font-size: 1.4rem;
+  color: hsl(234deg, 12%, 34%);
+}
+.cards .card .card__img {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+}
+.cards .card-1 {
+  border-top: 4px solid hsl(180deg, 62%, 55%);
+}
+.cards .card-2 {
+  border-top: 4px solid hsl(0deg, 78%, 62%);
+}
+.cards .card-3 {
+  border-top: 4px solid hsl(34deg, 97%, 64%);
+}
+.cards .card-4 {
+  border-top: 4px solid hsl(212deg, 86%, 64%);
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 11px;
+  padding: 10px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=main.css.map */
