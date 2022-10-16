@@ -40,6 +40,8 @@ body {
   text-align: center;
 }
 .box p {
+  max-width: 540px;
+  margin: 0 auto;
   margin-top: 15px;
   text-align: center;
 }
@@ -48,10 +50,12 @@ body {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 .cards .card {
   position: relative;
+  max-width: 400px;
   height: 250px;
   padding: 25px;
   background-color: #fff;
